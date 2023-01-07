@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Achievements Store</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="container1">
+        <div class="titulo">
+          <h1>Create account</h1>
+          <p class="sub">your secrets are safe with me</p>
+        </div>
+        <form id="form" class="form" method="post" action="/register">
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input type="text" id="email" />
+          </div>
+
+          <div class="form-control">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+            />
+          </div>
+          <div class="form-control">
+            <label for="secret">Secret Key</label>
+            <input
+              type="text"
+              id="secret"
+            />
+            <p style="font-size: x-small; color: gray;">This key will be used at the end of the year to view the year wrap</p>
+          </div>
+          <button class="button-entrar" type="submit">Create</button>
+        </form>
+      </div>
+      <div class="container2">
+        <img src="https://static01.nyt.com/images/2022/06/03/well/03well-read-secrets/03well-read-secrets-superJumbo.jpg" alt="imagem" width="80%" height="100%" />
+      </div>
+    </div>
+    <!-- <script src="./app.js"></script> -->
+  </body>
+</html>

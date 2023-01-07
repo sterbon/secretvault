@@ -1,0 +1,21 @@
+<div class="login-page">
+    <link rel="stylesheet" href="main.css">
+    <h1>
+      Store you achievements!
+    </h1>
+    <div class="form">
+      <form action='/add' method="post" class="login-form">
+        <!-- <label class="label">Your achievements store</label> -->
+        <p>Date : <span id="date"></span></p>
+        <!-- <textarea name="achievement" type="textarea" placeholder="Tell me about your week!" /> -->
+        <textarea rows = "5" cols = "60" name = "achievement" placeholder="Tell me about your week!"></textarea>
+        <input type="submit" class="submit" value="Store in vault" />
+      </form>
+    </div>
+    <script>
+      const today = new Date();
+      const dateElement = document.getElementById('date');
+      dateElement.textContent = today.toDateString();
+    </script>
+  
+  </div>
